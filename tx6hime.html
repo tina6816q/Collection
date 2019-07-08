@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home 首頁</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+   <style>
+       body{
+        font-family: 'Barlow', sans-serif;
+        margin: 0 auto;
+        height: 365vh;
+       }
+       .d_flex{
+        display: flex;
+       }
+       .show_in_desk{
+
+       }
+       .show_in_mobile{
+           /* display: none; */
+       }
+
+       .logo{
+           width: 70px;
+           position: absolute;
+           margin: 10px 0;
+           left: 50px;
+       }
+       .Main{
+           /* max-width: 960px; */
+           width: 70vw;
+           /* background: #e0d7d2; */
+           margin: 35px auto;
+           
+       }
+       .Main ul li{
+           margin: 0 auto;
+
+       }
+      
+       .Main-menu li a{
+        text-decoration: none;
+        display: block;
+        margin: 5px 10px;
+        padding: 20px;
+        color: #a59892;
+        font-size: 18px;
+       }
+       .Main-menu li a:hover{
+           color: #665750;
+       }
+       .fas{
+           font-size: 30px;
+       }  
+         
+
+       @media screen and (max-width:1023px){
+        .show_in_desk{
+            display: none;
+        }
+
+       }
+       @media screen and (min-width:1024px){
+        .show_in_mobile{
+           display: none;
+        }
+       
+       }
+
+
+ /* -------------------主視覺------------------------------- */
+        .wrapper{
+                position: relative;
+                width: 100%;
+                height: 500px;
+                background: #f3dfd4;
+            }
+            .wrapper_banner{
+                    position: relative;
+            }
+            .banner{
+                    width: 100%;
+                    height: 500px;
+            }
+            .banner img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 70%;
+            }
+            header p{
+                position: absolute;
+                top:45%;
+                font-size: 4rem;
+                right: 15%;
+                color: #a59892; 
+                font-family:serif;
+            }
+
+            @media screen and (max-width:1200px){
+                header p{
+                    right: 7%;
+                    transition: .5s;
+                }
+                .Main {
+                    width: 90vw;
+                }
+                .Main ul li {
+                    margin: 0 0 0 auto;
+                }
+            }
+            @media screen and (max-width:990px){
+                header p{
+                    font-size: 3.5rem;
+                    right: 9%;
+                }
+                .banner img{
+                    object-position: 90% 70%;
+                    transition: .5s;
+                }
+            }
+            @media screen and (max-width:840px){
+                header p{
+                    font-size: 2.5rem;
+                    top:25%;
+                    left: 35%;
+                }
+                .banner img{
+                    object-position: 10%;
+                }
+            }
+            @media screen and (max-width:500px){
+                header p{
+                    left: 20%;
+
+                }
+            }
+
+
+
+ /* ------------------視覺區塊----------------------------- */
+        section h3{
+            background: #fff;
+            border: 1px solid #928680;
+
+        }
+        section a{
+            color:#928680;
+            text-decoration: none;
+            display: block;
+            box-sizing: border-box;
+            padding: 15px 0;     
+            transition: .5s;      
+        }
+        section a:hover{
+            color: #fff;
+            background: #928680;
+        }
+        .r1{
+            width: 250px;
+            position: absolute;
+            bottom: 20px;
+            right: 10%;
+            text-align: center;
+        }
+        
+        .r2{
+            width: 250px;
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            text-align: center;
+            border: 1px solid #928680;
+        }
+        
+        
+        section .Color-block{
+            margin: 50px 0;
+            width: 800px;
+            height: 700px;
+            background: #f3dfd4;
+            position: relative;
+            left: 50px;
+        }
+        .picture{
+            background: #d49d7f;
+            width: 900px;
+            height: 550px;
+            position: relative;
+            right: 30%;
+            margin: 150px 0;
+            bottom: 20px;
+            
+            
+        }
+        .picture_1{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width:740px){
+            .Color-block{
+                display: none;
+            }
+            .picture{
+                width: 80%;
+                left: 10%;
+                margin-top:10%;
+                margin-bottom: 0;
+
+            }
+
+        }
+
+
+
+
+/* ------第二區塊-------- */
+        .Color{
+            position: relative; 
+        }
+        .Color-block_2{
+            margin: 50px 0;
+            width: 550px;
+            height: 600px;
+            background: #f3dfd4;
+            position: absolute;
+            right: 15%;
+        }
+        .picture_2{
+            width: 60vh;
+            height: 700px;
+            background: #d49d7f;
+            position: absolute;
+            right: 10%;
+
+        }
+        .picture_2 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .aa{
+            width: 60%;
+            height: 800px;
+            background: transparent;
+        }
+
+
+        @media screen and (max-width:740px){
+            .Color-block_2{
+                display: none;
+            }
+            .picture_2{
+                width: 80%;
+                margin: 7% 0;
+                
+            }
+        }
+
+
+
+/* ------第三區塊-------- */
+
+        .pu3{
+            width: 79vw;
+            height: 80px;
+            /* position: relative; */
+            /* background: #885a42; */
+            margin: 0 auto;
+        }
+        .pu3 ul{
+            width: 100%;
+            justify-content: space-between;
+
+        }
+        .picture_3{
+            width: 60%;
+            height: 500px;
+            background: #d49d7f;
+        }
+        .picture_4{
+            width: 30%;
+            height: 500px;
+            background: #885a42;
+        }
+        .picture_3_1,.picture_4_1{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .r3{
+            position: relative;
+            bottom: 90px;
+            width: 40%;
+            left: 50%;
+            text-align: center;
+        }
+
+        .r4{
+            position: relative;
+            bottom: 90px;
+            width: 40%;
+            left: 50%;   
+
+        }
+        .r4 a{
+            text-align: center;
+        }
+
+
+        @media screen and (max-width:740px){
+            .pu3{
+                width: 80vw;
+                
+            }
+            
+            .pu3 ul{
+                flex-wrap: wrap;
+            }
+            .pu3_1 li{
+                width: 95%;
+                margin: 5% auto;
+
+            }
+            .r3{
+                left: 55%;
+            }
+            .r4{
+                left: 55%;
+            }
+            
+        }
+
+/* -----------nav 部分------------------------- */
+        .aa-box{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            overflow: hidden;
+            
+            
+        }
+        .aaa{
+            position: relative;
+            z-index: 10;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #c9b6ac;
+            right: 0;
+            margin: 30px 0;
+            overflow: hidden;
+            transform: translateX(100%);
+            transition: .5s;
+                  
+        }
+        .aaa li{
+           text-align: center;           
+           
+        }
+        .bb{
+            margin: 20%;
+        }
+        .aaa li a{
+            font-size: 1.5em;
+            color: #fff;
+            text-decoration: none;
+            line-height: 3em;
+            display: block;
+        }
+        .aaa li a:hover{
+            color: #665750;
+        }
+        .show{
+            transform: translateX(0)
+        }
+       
+
+       
+   </style>
+</head>
+<body>
+    <nav class="Main">  
+        <a href="Home.html"><img class="logo" src="images/logo1.svg" alt=""></a>
+        <!-- <img class="logo" src="images/logo1.svg" alt=""> -->
+            <ul class="Main-menu d_flex">               
+                <li class="show_in_desk"><a href="Home.html">Home</a></li>
+                <li class="show_in_desk"><a href="Graphic Design.html">Graphic Design</a></li>
+                <li class="show_in_desk"><a href="Ui-Ux.html">Ui / Ux</a></li>
+                <li class="show_in_desk"><a href="Website.html">Website</a></li>
+                <li class="show_in_desk"><a href="Self-Introduction.html">Self-Introduction</a></li>
+                <li class="show_in_mobile"><a id="btn" href="#" ><i class="fas fa-bars" ></i></a></li>
+            </ul>
+
+            <div class="aa-box">
+                <ul class="aaa">
+                    <div class="bb">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Self-Introduction</a></li>
+                        <li><a href="">Graphic Desig</a></li>
+                        <li><a href="">Ui/Ux</a></li>
+                        <li><a href="">Website</a></li>
+                    </div>
+                </ul>
+            </div>
+            
+
+    </nav>
+
+
+    <header>
+            <header class="wrapper">
+                <header class="wrapper_banner">
+                    <header class="banner d_flex">
+                        <img src="images/11tumblr_mbumisiTT81qa6hruo1_1280.jpg" alt="">
+    
+                    </header>
+                    <div>
+                         <p>Personal website</p>
+                    </div>
+                </header>
+    
+            </header>
+                
+        </header>
+
+
+
+
+    <section>
+        <section class="d_flex">
+            <section class="Color-block show_in_desk"></section>
+            <div class="picture d_flex">
+                    <img class="picture_1" src="images/black-pencils-and-sign-word.jpg" alt="">
+                    <h3 class="r1"><a href="">Self-Introduction</a></h3>
+                </div>
+            </section>
+    </section> 
+    <section>
+        <section class="Color d_flex">
+            <section class="Color-block_2  show_in_desk"></section>
+            <div class="picture_2 d_flex">
+                <img class="" src="images/black-pencils-with-white-erasers.jpg" alt="">
+                <h3 class="r2"><a href="">Graphic Design</a></h3>
+
+            </div>
+
+            <div class="aa"></div>
+            <!-- 定位   -->
+        </section>
+    </section>
+
+    <section>
+        <section class="pu3 d_flex">
+            <ul class="pu3_1 d_flex ">
+                <li class="picture_3">
+                    <img class="picture_3_1" src="images/mobile-phone-earphones-and-ballpoint-on-table.jpg" alt="">
+                    <h3 class="r3"><a href="">Website</a></h3>
+                </li>
+                
+                <li class="picture_4">
+                    <img class="picture_4_1" src="images/newspapers-coffee-mug-and-mobile-phone-on-sofa.jpg" alt="">
+                    <h3 class="r4"><a href=""> Ui / Ux</a></h3>
+                </li>
+               
+            </ul>
+           
+    </section>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <script>
+    
+        $("#btn").click(function(){
+            $(".aaa").toggleClass("show")          
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website 網站</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="reset.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <style>
+        body{
+         font-family: 'Barlow', sans-serif;
+         margin: 0 auto;
+         height: 100vh;
+        }
+        .d_flex{
+         display: flex;
+        }
+ 
+        .logo{
+            width: 70px;
+            position: absolute;
+            margin: 10px 0;
+            left: 50px;
+        }
+        .Main{
+            /* max-width: 960px; */
+            width: 70vw;
+            /* background: #e0d7d2; */
+            margin: 20px auto;
+            
+        }
+        .Main ul li{
+            margin: 0 auto;
+ 
+        }
+       
+        .Main-menu li a{
+         text-decoration: none;
+         display: block;
+         margin: 5px 10px;
+         padding: 20px;
+         color: #a59892;
+         font-size: 18px;
+        }
+        .Main-menu li a:hover{
+            color: #665750;
+        }
+        nav .title{
+         text-align: center;      
+         
+        }
+        nav .title h2{
+         color: #a59892;
+         font-size: 18px;
+         letter-spacing:5px;
+         margin: 45px 0;       
+        }
+        
+        .title h2::after{
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 60px;
+            background: #a59892;          
+            left: 50%;
+            transform: translateX(-33px);
+            margin: -20px 0;          
+        }
+        .title h2::before{
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 60px;
+            background: #a59892;          
+            left: 50%;
+            transform: translateX(-33px);
+            margin: 45px 0;          
+        }
+
+        .pink{
+            width: 100%;
+            height: 20px;
+            background: #f3dfd4;
+        }
+
+
+        .fas{
+           font-size: 30px;
+       }  
+         
+
+       @media screen and (max-width:1023px){
+        .show_in_desk{
+            display: none;
+        }
+
+       }
+       @media screen and (min-width:1024px){
+        .show_in_mobile{
+           display: none;
+        }
+       
+       }
+
+
+
+    /* ---------------- */
+
+    @media screen and (max-width:1200px){
+                header p{
+                    right: 7%;
+                    transition: .5s;
+                }
+                .Main {
+                    width: 90vw;
+                }
+                .Main ul li {
+                    margin: 0 0 0 auto;
+                }
+            }
+ /* ----------------------------------------------- */
+        .section_1{
+            width: 79vw;
+            margin: 20px auto;
+        }
+        section ul li{
+            width: 50%;
+            height: 450px;
+            background: #a59892;
+            margin: 50px;
+            
+        }
+        section ul li img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        @media screen and (max-width:1350px){
+            .section_1{
+                max-width: 100%;
+                flex-wrap: wrap;
+                transition: .5s;
+                             
+            }
+            section ul li{
+                width: 100%;
+                height: 450px;
+                transition: .5s;
+                
+            }
+        }
+
+        @media screen and (max-width:730px){
+            .section_1{
+                width: 90%;
+                
+            }
+
+            section ul li{
+                width: 100%;
+                height: 250px;
+                margin: 5% ;
+               
+                
+            }
+        }
+
+        @media screen and (max-width:500px){
+            .section_1{
+                width: 100%;
+            }
+            section ul li{
+                margin: 5% 10%;
+            }
+
+        }
+
+
+     /* -----------nav 部分------------------------- */
+        .aa-box{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            overflow: hidden;
+            
+            
+        }
+        .aaa{
+            position: relative;
+            z-index: 10;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #c9b6ac;
+            right: 0;
+            margin: 15px 0;
+            overflow: hidden;
+            transform: translateX(100%);
+            transition: .5s;
+                  
+        }
+        .aaa li{
+           text-align: center;           
+           
+        }
+        .bb{
+            margin: 20%;
+        }
+        .aaa li a{
+            font-size: 1.3em;
+            color: #fff;
+            text-decoration: none;
+            line-height: 3em;
+            display: block;
+        }
+        .aaa li a:hover{
+            color: #665750;
+        }
+        .show{
+            transform: translateX(0)
+        }
+
+         /* ------------------------ */
+         .topBtn{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            right:20px;
+            bottom:20px;
+            z-index: 90;
+
+        }
+        .fas{
+            transform: translate(-6px , -5px);
+            font-size: 25px;
+            
+
+        }
+
+
+
+
+        </style>
+</head>
+<body>
+        <button class="btn btn-info position-fixed topBtn" id="topBtn"><i class="fas fa-angle-up"></i></button>
+
+        <nav class="Main">     
+                <a href="Home.html"><img class="logo" src="images/logo1.svg" alt=""></a>
+                <ul class="Main-menu d_flex">               
+                    <li class="show_in_desk"><a href="Home.html">Home</a></li>
+                    <li class="show_in_desk"><a href="Graphic Design.html">Graphic Design</a></li>
+                    <li class="show_in_desk"><a href="Ui-Ux.html">Ui / Ux</a></li>
+                    <li class="show_in_desk"><a href="Website.html">Website</a></li>
+                    <li class="show_in_desk"><a href="Self-Introduction.html">Self-Introduction</a></li>
+                    <li class="show_in_mobile"><a id="btn" href="#" ><i class="fas fa-bars" ></i></a></li>
+                </ul>
+
+                <div class="aa-box">
+                        <ul class="aaa">
+                            <div class="bb">
+                                <li><a href="Home.html">Home</a></li>
+                                <li><a href="Self-Introduction.html">Self-Introduction</a></li>
+                                <li><a href="Graphic Design.html">Graphic Desig</a></li>
+                                <li><a href="Ui-Ux.html">Ui/Ux</a></li>
+                                <li><a href="Website.html">Website</a></li>
+                            </div>
+                        </ul>
+                    </div>
+        
+            <div class="title">
+                <h2>Website</h2>
+            </div>
+    </nav>
+
+    <div class="pink"></div>
+
+    <section>
+        <section>
+            <ul class="section_1 d_flex">
+                <li>
+                    <img src="images/01.jpg" alt="">
+                    
+                </li>
+                <li>
+                    <img src="images/02.jpg" alt="">
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> -->
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+      
+        <script>
+              $("#topBtn").click(function(){
+                  // $(window).scrollTop(0);
+                  $("html").animate({
+                      scrollTop: 0
+                  }, 500)
+              })
+          </script>
+  
+      <script>
+      
+          $("#btn").click(function(){
+              $(".aaa").toggleClass("show")          
+          })
+      </script>
+    
+</body>
+</html>

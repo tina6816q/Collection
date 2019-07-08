@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>隱藏選單</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      body{
+        background: #eeeeee;
+        height: 300vh;
+      }
+      .menu_bars{
+        cursor: pointer;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        /* background: #cccccc; */
+      }
+      .active .menu_bars{
+        background: transparent;
+      }
+      .menu_bars .bar{
+        height: 4px;
+        width: 30px;
+        background: rgb(27, 5, 5);
+        border-radius: 5px;
+        margin: 3px;
+        transition: .5s;
+      }
+      .menu_bars:hover{
+        background: transparent;
+      }
+
+      .active .menu_bars .bar:nth-child(1){
+        transform: rotate(-45deg) translate(-7px, 7px);
+      }
+      .active .menu_bars .bar:nth-child(2){
+        transform: rotate(180deg);
+        opacity: 0;
+      }
+      .active .menu_bars .bar:nth-child(3){
+        transform: rotate(45deg) translate(-7px, -7px);
+      }
+
+      .menu_list{
+        width: 100%;
+        transform: translateX(100%);   
+        transition: .3s;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        padding: 80px 0 0;
+      }
+      .active .menu_list{
+        background: lightsalmon;
+        transform: translateX(0);
+      }
+
+      
+      .menu_list a{
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2;
+        text-decoration: none;
+        color: darkslategrey;
+        transition: .3s;
+      }
+      .menu_list a:hover{
+        color: lightsalmon;
+        background: rgb(109, 37, 14);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="menu_wrapper">
+      <div class="menu_bars d-flex" id="menu_bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="list-unstyled menu_list">
+        <li><a href="">item01</a></li>
+        <li><a href="">item02</a></li>
+        <li><a href="">item03</a></li>
+        <li><a href="">item04</a></li>
+      </ul>
+    </div>
+          
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      $("#menu_bars").click(function(){
+        $(".menu_wrapper").toggleClass("active");
+      })
+      $(".menu_list").click(function(){
+        $(".menu_wrapper").toggleClass("active");
+      })
+      $(window).scroll(function(){
+        var scrollTop=$(this).scrollTop();
+        var windowHeight=$(window).height();
+        if(scrollTop>windowHeight){
+        }
+      })
+
+    </script>
+  </body>
+</html>
